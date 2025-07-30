@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="30styles.css">
+    <script src="https:cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Reto prgramacion</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Comparativo colombia y el mundo</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li> <a href="#">inicio</a></li>
+            <li> <a href="#">paises</a></li>
+            <li> <a href="graficoregiones">regiones</a></li>
+            <li> <a href="graficocomparativo">evolucion</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="main-content">
+        <section class="grafico" id="grafico paises">
+            <h2>Top 20 paises con mayor producion de energia renovable</h2>
+            <canvas id="graficoBarraspaises"></canvas>
+        </section>
+
+        <section class="grafico" id="grafico regiones">
+            <h2>producion de energia renovable por regiones</h2>
+            <canvas id="graficoBarrasRegiones"></canvas>
+        </section>
+
+        <section class="grafico" id="grafico comparativo">
+            <h2>comparativo de produccion de energia renovable</h2>
+            <canvas id="graficoBarrascomparativo"></canvas>
+        </section>
+    </div>
+
+    <footer class="footer">
+<p>
+    creado por kevin espeleta -📩 <a href="mailto.kewin.espeleta@udea.edu.co" class="correo" kewin.espeleta@udea.edu.co></a>
+</p>
+    </footer>
+
+
+    <script src="30script.js"></script>
+</body>
+
+</html>
